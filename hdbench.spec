@@ -3,7 +3,7 @@ Summary(ja):	HDBENCH ¥é¥¤¥¯¤Ê¥Ù¥ó¥Á¥Þ¡¼¥¯¥½¥Õ¥È
 Summary(pl):	Hdbench narzêdzie do benchmarków CPU, Video i HDD
 Name:		hdbench
 Version:	0.14.0
-Release:	1
+Release:	2
 Source0:	http://download.vector.co.jp/pack/unix/hardware/bench/%{name}-%{version}.tar.gz
 License:	GPL
 Group:		Applications/System
@@ -51,7 +51,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %files
 %defattr(644,root,root,755)
 %doc doc/{AUTHORS,BUGS,ChangeLog,FAQ,README,RESULTS,THANKS,TODO,WANTED}.gz
-%lang(jp) %doc doc/{ALGORITHM,BUGS,ChangeLog,FAQ,README,TODO,WANTED}.jp*
+%lang(ja) %doc doc/{ALGORITHM,BUGS,ChangeLog,FAQ,README,TODO,WANTED}.jp*
 %doc doc/*.html
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*.xpm
