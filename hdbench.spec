@@ -8,7 +8,7 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://download.vector.co.jp/pack/unix/hardware/bench/%{name}-%{version}.tar.gz
 # Source0-md5:	98984d51811ee95ed00ae07728d3f37e
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	gtk+ >= 1.2.0
 
 %description
