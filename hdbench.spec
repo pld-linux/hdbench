@@ -39,8 +39,10 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir},%{_pixmapsdir},%{_docdir}/%{name}}
 
 install pixmaps/*xpm $RPM_BUILD_ROOT%{_pixmapsdir}
-install doc/* $RPM_BUILD_ROOT%{_docdir}/hdbench
 install src/hdbench $RPM_BUILD_ROOT%{_bindir}
+
+gzip -9nf doc/{AUTHORS,BUGS,ChangeLog,FAQ,README,RESULTS,THANKS,TODO,WANTED}
+gzip -9nf doc/{ALGORITHM,BUGS,ChangeLog,FAQ,README,TODO,WANTED}.jp
 
 
 %clean
@@ -48,7 +50,8 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(644,root,root,755)
-
+%doc doc/{AUTHORS,BUGS,ChangeLog,FAQ,README,RESULTS,THANKS,TODO,WANTED}.gz
+%lang(jp) %doc doc/{ALGORITHM,BUGS,ChangeLog,FAQ,README,TODO,WANTED}.jp*
+%doc doc/*.html
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*.xpm
-%{_docdir}/*
