@@ -17,7 +17,7 @@ famous benchmark software for Windows in Japan. With this tool You can
 benchmark Your CPU, Video Card and HDD.
 
 %description -l pl
-Pakiet zawiera narzedzie pozwalaj±ce zmierzyæ wydajno¶æ procesora,
+Pakiet zawiera narzêdzie pozwalaj±ce zmierzyæ wydajno¶æ procesora,
 karty video, i dysku. Hdbench jest klonem narzêdzia HDBENCH
 stworzonego dla systemów Windows.
 
