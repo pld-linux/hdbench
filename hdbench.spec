@@ -8,8 +8,8 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://download.vector.co.jp/pack/unix/hardware/bench/%{name}-%{version}.tar.gz
 # Source0-md5:	98984d51811ee95ed00ae07728d3f37e
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	gtk+ >= 1.2.0
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 HDBENCH clone is a benchmark software like HDBENCH which is the most
@@ -27,12 +27,12 @@ HDBENCH cloneはWindows用ベンチマークソフトの定番「HDBENCH」をUNIXに
 中身はHDBENCHと全く別物です。
 
 %prep
-
 %setup -q
 
 %build
 ./configure
-%{__make}
+%{__make} \
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -42,7 +42,7 @@ install pixmaps/*xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 install src/hdbench $RPM_BUILD_ROOT%{_bindir}
 
 %clean
-rm -rf ${RPM_BUILD_ROOT}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
