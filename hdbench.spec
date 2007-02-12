@@ -1,6 +1,6 @@
 Summary:	A benchmark software like HDBENCH
-Summary(ja):	HDBENCH ¥é¥¤¥¯¤Ê¥Ù¥ó¥Á¥Ş¡¼¥¯¥½¥Õ¥È
-Summary(pl):	Hdbench narzêdzie do benchmarków CPU, Video i HDD
+Summary(ja.UTF-8):   HDBENCH ãƒ©ã‚¤ã‚¯ãªãƒ™ãƒ³ãƒãƒãƒ¼ã‚¯ã‚½ãƒ•ãƒˆ
+Summary(pl.UTF-8):   Hdbench narzÄ™dzie do benchmarkÃ³w CPU, Video i HDD
 Name:		hdbench
 Version:	0.14.0
 Release:	2
@@ -16,15 +16,15 @@ HDBENCH clone is a benchmark software like HDBENCH which is the most
 famous benchmark software for Windows in Japan. With this tool You can
 benchmark Your CPU, Video Card and HDD.
 
-%description -l pl
-Pakiet zawiera narzêdzie pozwalaj±ce zmierzyæ wydajno¶æ procesora,
-karty video, i dysku. Hdbench jest klonem narzêdzia HDBENCH
-stworzonego dla systemów Windows.
+%description -l pl.UTF-8
+Pakiet zawiera narzÄ™dzie pozwalajÄ…ce zmierzyÄ‡ wydajnoÅ›Ä‡ procesora,
+karty video, i dysku. Hdbench jest klonem narzÄ™dzia HDBENCH
+stworzonego dla systemÃ³w Windows.
 
-%description -l ja
-HDBENCH clone¤ÏWindowsÍÑ¥Ù¥ó¥Á¥Ş¡¼¥¯¥½¥Õ¥È¤ÎÄêÈÖ¡ÖHDBENCH¡×¤òUNIX¤Ë
-°Ü¿¢¤·¤¿¥½¥Õ¥È¡¦¡¦¡¦¤Ç¤Ï¤¢¤ê¤Ş¤»¤ó¡£Ã±¤Ë¥æ¡¼¥¶¥¤¥ó¥¿¥Õ¥§¥¤¥¹¤ò¿¿»÷¤¿¤À¤±¤Ç
-Ãæ¿È¤ÏHDBENCH¤ÈÁ´¤¯ÊÌÊª¤Ç¤¹¡£
+%description -l ja.UTF-8
+HDBENCH cloneã¯Windowsç”¨ãƒ™ãƒ³ãƒãƒãƒ¼ã‚¯ã‚½ãƒ•ãƒˆã®å®šç•ªã€ŒHDBENCHã€ã‚’UNIXã«
+ç§»æ¤ã—ãŸã‚½ãƒ•ãƒˆãƒ»ãƒ»ãƒ»ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚å˜ã«ãƒ¦ãƒ¼ã‚¶ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ã‚¤ã‚¹ã‚’çœŸä¼¼ãŸã ã‘ã§
+ä¸­èº«ã¯HDBENCHã¨å…¨ãåˆ¥ç‰©ã§ã™ã€‚
 
 %prep
 %setup -q
