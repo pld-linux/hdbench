@@ -1,6 +1,6 @@
 Summary:	A benchmark software like HDBENCH
-Summary(ja.UTF-8):   HDBENCH ライクなベンチマークソフト
-Summary(pl.UTF-8):   Hdbench narzędzie do benchmarków CPU, Video i HDD
+Summary(ja.UTF-8):	HDBENCH ライクなベンチマークソフト
+Summary(pl.UTF-8):	Hdbench narzędzie do benchmarków CPU, Video i HDD
 Name:		hdbench
 Version:	0.14.0
 Release:	2
